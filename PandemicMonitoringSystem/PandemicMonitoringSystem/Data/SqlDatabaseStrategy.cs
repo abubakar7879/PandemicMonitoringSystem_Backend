@@ -7,6 +7,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Threading.Tasks;
 using PandemicMonitoringSystem.Abstraction;
+using MySql.Data.MySqlClient;
 
 namespace PandemicMonitoringSystem.Data
 {
@@ -25,7 +26,7 @@ namespace PandemicMonitoringSystem.Data
                 string connectionString = configuration.GetConnectionString("DefaultConnection");
                 if (_connection == null)
                 {
-                    _connection = new SqlConnection(connectionString);
+                    _connection = new MySqlConnection(connectionString);
                     _connection.Open();
                 }
                 else if (_connection.State != ConnectionState.Open)

@@ -13,7 +13,7 @@
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
-      "launchUrl": "api/Home",
+      "launchUrl": "api/department",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
@@ -21,7 +21,7 @@
     "PandemicMonitoringSystem": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "api/Home",
+      "launchUrl": "api/depertment",
       "applicationUrl": "http://localhost:5000",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
