@@ -1,4 +1,4 @@
-﻿using Dapper;
+﻿﻿using Dapper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using PandemicMonitoringSystem.Abstraction;
@@ -66,7 +66,7 @@ namespace PandemicMonitoringSystem.Controller
                         Int32.TryParse(GetmaxId.First().Value.ToString(), out Id); // trying to parse In case we got null
                     }
                     Id++; // incrment 
-                    model.id= Id;//adding in column
+                    model.id = Id;//adding in column
                     var data = await con.ExecuteAsync(@$"INSERT INTO sql6580689.department (name , id ) VALUES('{model.name}' , '{model.id}')");
                     return Ok(data);
                 }
